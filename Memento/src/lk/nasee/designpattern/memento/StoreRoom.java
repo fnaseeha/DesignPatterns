@@ -5,14 +5,14 @@ import java.util.Stack;
 //careTaker
 public class StoreRoom {
 	
-	Stack<Memento> ledTvHistory = new Stack<>();
+	Stack<Memento> hallHistory = new Stack<>();
 
 	public void addMemento(Memento m){
-		ledTvHistory.push(m);
+		hallHistory.push(m);
 	}
 	public Memento getMemonto(){
-		if(!ledTvHistory.isEmpty())
-			return ledTvHistory.pop();
+		if(!hallHistory.isEmpty())
+			return hallHistory.pop();
 		else
 			return null;
 	}
